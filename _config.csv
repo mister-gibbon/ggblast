@@ -1,0 +1,6 @@
+Name,Title,Params
+DefaultGapped,DefaultGapped,"-outfmt ""10 qseqid qstart qend mismatch gapopen pident nident length qlen"" -max_hsps 1 -max_target_seqs 1"
+DefaultUngapped,DefaultUngapped,"-outfmt ""10 qseqid qstart qend mismatch gapopen pident nident length qlen"" -max_hsps 1 -max_target_seqs 1 -ungapped"
+tomkins2013,Tomkins 2013 no max hsps 1,"-task blastn -outfmt ""10 qseqid qstart qend mismatch gapopen pident nident length qlen"" -evalue 10 -word_size 11 -max_target_seqs 1 -dust no -soft_masking false -ungapped"
+tomkins2013WithMaxHsps,Tomkins 2013 max hsps 1,"-task blastn -outfmt ""10 qseqid qstart qend mismatch gapopen pident nident length qlen"" -evalue 10 -word_size 11 -max_target_seqs 1 -dust no -soft_masking false -ungapped -max_hsps 1"
+tomkins2018,Tomkins 2018,"-task blastn -outfmt ""10 qseqid qstart qend mismatch gapopen pident nident length qlen"" -evalue 0.1 -word_size 11 -max_target_seqs 1 -max_hsps 1 -dust no -soft_masking false -perc_identity 50 -gapopen 3 -gapextend 3"

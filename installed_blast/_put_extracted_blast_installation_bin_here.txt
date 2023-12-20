@@ -1,0 +1,2 @@
+For example, you should have:
+installed_blast/blastn on mac/linux or installed_blast/blastn.exe on windows

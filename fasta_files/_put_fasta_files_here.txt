@@ -1,0 +1,2 @@
+For example you could have:
+fasta_files/Pan_troglodytes_Chromosome_2A.fa

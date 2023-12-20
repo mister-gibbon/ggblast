@@ -1,0 +1,1 @@
+lastz Homo_sapiens.GRCh38.dna.chromosome.2.fa Homo_sapiens.GRCh38.dna.chromosome.2.fa_split_10000x10.fa --step=10 --seed=match12 --notransition --exact=20 --noytrim --ambiguous=n --filter=coverage:50 --filter=identity:50 --format=general:start1,end1,length1,length2,strand2,identity > results/HumanToHuman.dat
