@@ -258,15 +258,7 @@ Valid usage examples:
 ggblast-win.exe
 ggblast-win.exe --capitalize-file fileToCapitalize.fa
 `;
-/*
-I want code that can function to easily compare chromosome fa files and full genome fa files. 
 
-I would love each command to have an easy way to change the file name and number of random sequences (10, 100, 1000 etc). 
-
-Commands that are running chromosomes within a genome file I would like to have some code that can sequentially run comparisons, eg: lion/tiger chromosome one comparison runs, and immediately after without me having to intervene it runs chromosome 2, then 3 etc. 
-
-I need a way to get rid of "Ns"
-*/
 const go = async () => {
   const commandLineArgs = process.argv.slice(2);
   const capitalizeFileIndex = _.findIndex(commandLineArgs, arg => arg === '--capitalize-file');
