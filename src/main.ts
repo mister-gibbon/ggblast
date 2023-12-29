@@ -181,7 +181,7 @@ const generateComparisonPercentagesFromCSVFile = async (
         resolve({
           weighted: `${((nidentSum / lengthSum) * 100).toFixed(2)}%`,
           unweighted: `${(pidentSum / totalLength).toFixed(2)}%`,
-          tomkinsWeighted: `${((lengthSum / qlenSum) * 100).toFixed(2)}%`,
+          tomkinsWeighted: `${((nidentSum / qlenSum) * 100).toFixed(2)}%`,
         });
       });
   });
