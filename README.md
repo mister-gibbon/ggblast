@@ -2,7 +2,7 @@
 
 ## Setup
 
-1. Download a release and extract it
+1. Download the latest [release](https://github.com/mister-gibbon/ggblast/releases) for your platform and extract it
 2. Download a blast zip (make sure you don't get the src zip, double check the bullets below to verify) using
    [this link](https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/) and extract it, then move the files from
    `bin` into the `installed_blast` folder
@@ -22,20 +22,34 @@
      `cd C:\Users\YourName\GutsickGibbonBlastTool-0.1`
 2. Run the executable: `ggblast` or `ggblast.exe` on windows
    - If you get a permissions error:
-     - On mac
+     - On mac:
        - Reveal the script in your finder
        - Right-click and select open
        - Click the open button in the popup
        - Close the window that opens
        - Retry from your terminal
-     - On linux
+     - On linux:
        - Run `chmod +x ggblast`
        - Retry from your terminal
 
 ## Configuration
 
-- TODO: Explain updating \_config.csv
-- TODO: Explain updating \_variables.csv
+### \_config.csv
+
+The [\_config.csv](./_config.csv) file contains the blast commands that you want to run as a user.
+
+_**Note:** While it is possible to edit the outfmt, it is not recommended. There is a high likelihood that any
+adjustments will cause the program to fail, because the weights are calculated using a specific order._
+
+### \_variables.csv
+
+The [\_variables.csv](./_variables.csv) file contains configuration options related to anything that blast does not
+explicitly handle.
+
+### See Also
+
+The [BLAST® Command Line Applications User Manual](https://www.ncbi.nlm.nih.gov/books/NBK279690/) has details on the
+inner workings of blast, which you might use to update your `_config.csv`.
 
 ## Running from src
 
